@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+marquee {
+    font-size: smaller;
+    display: block;
+    margin-top: 2px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    color: transparent;
+}
+
+input,
+textarea,
+button,
+select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+a {
+    color: white;
+}
+
+@font-face {
+    font-family: 'regm';
+    src: url(asserts/regmedi.otf);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.3em;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+nav img {
+    width: 1.2em;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 100vw;
+}
+
+header a {
+    position: absolute;
+    color: rgb(18, 68, 195);
+    bottom: 1.5em;
+    z-index: 2;
+    font-family: monospace;
+    font-size: small;
+}
+
+ul {
+    position: sticky;
+    top: 0;
+    padding: 1em 0.7em;
+    list-style: none;
+    font-family: monospace;
+    font-size: medium;
+    display: flex;
+    gap: 0.6em;
+    overflow-x: scroll;
+    z-index: 5;
+    background-color: white;
+}
+
+li {
+    padding: 0.4em 1.5em;
+    border-radius: 30px;
+    background-color: #eeeeee;
+}
+
+article {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+article img {
+    border-radius: 10px;
+    width: 95vw;
+}
+
+article span {
+    width: 88vw;
+    position: absolute;
+    bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+}
+
+article a {
+    font-family: monospace;
+    font-size: x-small;
+    padding: 0.8em 1.2em;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+footer {
+    padding: 2em 1em;
+    background-color: black;
+}
