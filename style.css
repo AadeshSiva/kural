@@ -13,7 +13,7 @@ marquee {
 }
 
 ::-webkit-scrollbar {
-    color: transparent;
+    display: none;
 }
 
 input,
@@ -61,6 +61,38 @@ nav img {
     width: 1.2em;
 }
 
+@keyframes menuin {
+    from {
+        height: 1em;
+    }
+
+    to {
+        height: 100vh;
+    }
+}
+
+aside {
+    position: fixed;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    font-family: regm;
+    font-size: 7vw;
+    display: none;
+    flex-direction: column;
+    animation: menuin 0.5s forwards;
+}
+
+aside a:first-child {
+    margin-top: 1em;
+}
+
+aside a {
+    margin: 0.1em 1em;
+}
+
 header {
     position: relative;
     display: flex;
@@ -80,10 +112,32 @@ header a {
     font-size: small;
 }
 
+/* 
+.searchsort {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+    font-family: monospace;
+}
+
+.searchsort img {
+    width: 1em;
+    margin-right: 5px;
+}
+
+.searchsort p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em 1em;
+    background-color: #f7f7f7c5;
+    border-radius: 5px;
+} */
+
 ul {
     position: sticky;
     top: 0;
-    padding: 1em 0.7em;
+    padding: 1em;
     list-style: none;
     font-family: monospace;
     font-size: medium;
@@ -91,12 +145,14 @@ ul {
     gap: 0.6em;
     overflow-x: scroll;
     z-index: 5;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
 }
 
 li {
-    padding: 0.4em 1.5em;
-    border-radius: 30px;
+    padding: 0.5em 1.9em;
+    border-radius: 5px;
     background-color: #eeeeee;
 }
 
